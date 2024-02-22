@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="cart">
+        <div class="item">
+            <span class="item-name">Item 1</span>
+            <button class="quantity-btn" onclick="decrementQuantity(this)">-</button>
+            <span class="quantity">1</span>
+            <button class="quantity-btn" onclick="incrementQuantity(this)">+</button>
+            <button class="like-btn" onclick="toggleLike(this)">❤️</button>
+            <button class="delete-btn" onclick="removeItem(this)">Delete</button>
+            <span class="item-price">$10</span>
+        </div>
+        <!-- Add more items as needed -->
+        <div class="item">
+            <span class="item-name">Item 2</span>
+            <button class="quantity-btn" onclick="decrementQuantity(this)">-</button>
+            <span class="quantity">1</span>
+            <button class="quantity-btn" onclick="incrementQuantity(this)">+</button>
+            <button class="like-btn" onclick="toggleLike(this)">❤️</button>
+            <button class="delete-btn" onclick="removeItem(this)">Delete</button>
+            <span class="item-price">$15</span>
+        </div>
+        <!-- Add more items as needed -->
+        <div id="total">Total: $25</div>
+    </div>
+    
+</body>
+</html>
