@@ -1,16 +1,31 @@
 .item {
-    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
-.like-btn {
-    margin-left: 10px;
-    background-color: transparent;
-    border: none;
+.item img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+.item-details {
+    flex-grow: 1;
+}
+.buttons button {
+    margin: 0 5px;
+}
+.heart {
     cursor: pointer;
 }
-
-.liked {
+.heart.red {
     color: red;
 }
+.total {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
 
 
